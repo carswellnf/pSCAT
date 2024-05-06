@@ -1,0 +1,1 @@
+wget -r -A"*.json" -np -nd  http://phages.wustl.edu/starterator/json

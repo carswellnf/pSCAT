@@ -1,0 +1,1 @@
+function e(t){return t&&t.__esModule&&Object.prototype.hasOwnProperty.call(t,"default")?t.default:t}var a=Object.setPrototypeOf||({__proto__:[]}instanceof Array?n:f);function n(t,r){return t.__proto__=r,t}function f(t,r){for(var o in r)Object.prototype.hasOwnProperty.call(t,o)||(t[o]=r[o]);return t}var p=e(a);export{p as default};

@@ -1,0 +1,9 @@
+{
+    "liveshare.anonymousGuestApproval": "accept",
+    "liveshare.allowGuestTaskControl": true,
+    "liveshare.allowGuestDebugControl": true,
+    "liveshare.increasedGuestLimit": true,
+    "liveshare.keepAliveInterval": -1,
+    "liveshare.launcherClient": "visualStudioCode",
+    "liveshare.notebooks.allowGuestExecuteCells": true
+}

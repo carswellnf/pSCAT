@@ -1,0 +1,1 @@
+function e(o){return o&&o.__esModule&&Object.prototype.hasOwnProperty.call(o,"default")?o.default:o}var t={__proto__:null,foo:{}},r=Object,a=function(){return{__proto__:t}.foo===t.foo&&!(t instanceof r)},f=e(a);export{f as default};
