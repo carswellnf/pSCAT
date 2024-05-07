@@ -3,7 +3,7 @@ title: pSCAT
 ---
 # pSCAT
 
-For more information on how to use pSCAT visit the <a href="./tutorials">tutorials</a> page.
+<div class="note" label> For more information on how to use pSCAT visit the <a href="./tutorials">tutorials</a> page. </div>
 
 ```js
 import {startEqual, getSubcluster, geneIDsList} from "./functions/startObjCreation.js";
@@ -59,12 +59,16 @@ let phamSelect = view(
     submit: true
   })
 );
+
 ```
+
+
 ----------------
 ## Genes Table
 
 ```js
 const geneSearchTable = view(Inputs.search(phamTable(dataSorted, pham)))
+
 ```
 ```js
 Inputs.table(geneSearchTable)
@@ -111,6 +115,8 @@ Inputs.table(filteredTableData, {
   } 
 })
 ```
+
+**Figure 1:** Tick Chart showing used start Codons in <b><font color="blue"> blue</font></b>, predicted start codons (codons without a locustag but with a computer identified start) in <b><font color="#FDDA0D">yellow</font></b>, and all other possible start codons in <b>black</b>. To learn more visit the <a href="tutorials#how-to-use-the-tick-chart">tutorials</a> page.
 ```js
 //Draw the Tick Chart
 let drawTickChart = await tickChart(dataSorted)
@@ -125,7 +131,7 @@ const {mostCommonValue, totalCommonStartGeneCount, totalGeneCount, percent}  = m
 ```js
 
 ```
-The most common used start codon is <i>Start Codon</i> <b>${mostCommonValue}</b> <br> which was called <b> ${totalCommonStartGeneCount} / ${totalGeneCount} times (${percent})</b>.
+The most common used start codon in <u>phamily ${phamSelect}</u> is <i>Start Codon</i> <b>${mostCommonValue}</b> <br> which was called <b> ${totalCommonStartGeneCount} / ${totalGeneCount} times (${percent})</b>.
 
 
 The most common used start broken down <b>by subcluster: </b>
@@ -157,7 +163,8 @@ Inputs.table(mostCommonChosenStartPerSubcluster(dataSorted), {
 ```js
 const phamBarChartData = PhamBarChart(results)
 ```
-**Figure 1.** The most conserved start codon is most likely to be apart of a protein strucutre. Note, the most convserved start codon depicted in this graph is NOT the same as the chosen start codon.
+**Figure 2.** The most conserved start codon in phamily ${phamSelect}. Note, the most convserved start codon depicted in this graph is NOT the same as the chosen start codon. To learn more visit the <a href="tutorials#start-repeat-chart">tutorials</a> page.
+
 <div style="width: width; height: 500px; overflow: auto">
   ${Plot.plot({
       width: width,

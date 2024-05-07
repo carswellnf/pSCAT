@@ -6,16 +6,17 @@ Title: Development
 -------------------------
 ## Github
 
+https://github.com/carswellnf/pSCAT
 
 -------------------------
 
 ## Mockup Designs For Portions of pSCAT 
 ```js
-FileAttachment("tickChart.jpeg").image()
+FileAttachment("./pictures/tickChart.jpeg").image()
 ```
 ```js
-FileAttachment("geneInfo.jpeg").image()
+FileAttachment("./pictures/geneInfo.jpeg").image()
 ```
 ```js
-FileAttachment("barChart.jpeg").image()
+FileAttachment("./pictures/barChart.jpeg").image()
 ```

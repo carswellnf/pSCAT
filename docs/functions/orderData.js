@@ -40,7 +40,6 @@ export function orderAndSort(data, order, sortBySubclusterChoice, searchedGeneID
 
     // If sortBySubclusterChoice is true, further process data
     if (sortBySubclusterChoice) {
-        console.log("Sorting by subcluster...");
 
         // Create a map of subclusters and their corresponding items
         const groupedBySubcluster = sort.reduce((acc, curr) => {
